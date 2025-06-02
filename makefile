@@ -21,6 +21,9 @@ test: $(BUILD_DIR)/test
 # Create build
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)	
-
+# Docs
+docs:
+	doxygen Doxyfile
+	
 clean:
 	rm -f $(BUILD_DIR)/* 
