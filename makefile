@@ -18,5 +18,9 @@ $(BUILD_DIR)/test: test/test_skip_list.cpp include/skip_list.hpp | $(BUILD_DIR)
 test: $(BUILD_DIR)/test
 	@$(BUILD_DIR)/test
 
+# Create build
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)	
+
 clean:
 	rm -f $(BUILD_DIR)/* 
