@@ -23,3 +23,8 @@ make
 
 ### Run Test
 make test
+
+### Doxyfile
+doxygen docs/Doxyfile
+### Run
+xdg-open docs/html/index.html
