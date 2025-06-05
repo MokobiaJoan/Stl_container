@@ -23,3 +23,6 @@ make
 
 ### Run Test
 make test
+
+### LICENSE
+This project is licensd under the [MIT License](LICENSE)
