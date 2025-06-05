@@ -1,0 +1,68 @@
+/**
+ * @mainpage Skip List (C++20)
+ *
+ * @section intro_sec 📚 Introduction
+ *
+ * This project is a modern, generic implementation of a Skip List data structure written in C++20.  
+ * It supports STL-style features and uses C++20 concepts (`requires std::totally_ordered<T>`) for strict type checking.
+ *
+ * @section features_sec 🚀 Features
+ * - Template-based skip list: SkipList<T>
+ * - STL-style forward iterator:
+ *   - begin(), end() for range-based loops
+ * - Core container operations:
+ *   - insert, erase, find
+ * - Container utilities:
+ *   - size(), empty(), clear(), swap(), operator[]
+ * - Equality operators: ==, !=
+ * - Uses C++20 concepts: requires std::totally_ordered<T>
+ * - Fully unit tested using Google Test
+ * - Doxygen-compatible documentation
+ *
+ * @section example_sec 📎 Example
+ *
+ * @code{.cpp}
+ * #include "skip_list.hpp"
+ * #include <iostream>
+ *
+ * int main() {
+ *     SkipList<int> list;
+ *     list.insert(10);
+ *     list.insert(20);
+ *
+ *     if (list.find(10)) {
+ *         std::cout << "Found 10!" << std::endl;
+ *     }
+ *
+ *     for (const auto& item : list) {
+ *         std::cout << item << " ";
+ *     }
+ *     std::cout << std::endl;
+ * }
+ * @endcode
+ *
+ * @section usage_sec 🧪 Running Tests
+ * Make sure you have GoogleTest installed. Then simply run:
+ * @code{.bash}
+ * make test
+ * @endcode
+ *
+ * @section doc_sec 📘 Full Documentation
+ * The full documentation includes:
+ * - Class and member function reference
+ * - Iterator usage
+ * - Concept constraints and requirements
+ *
+ * You can generate the HTML docs by:
+ * @code{.bash}
+ * cd docs
+ * doxygen Doxyfile
+ * @endcode
+ * Then open docs/html/index.html in your browser.
+ *
+ * @section license_sec 📄 License
+ * This project is licensed under the MIT License. See the LICENSE file.
+ *
+ * @section author Author
+ * Created by [Mokobia Joan Chidiebere], 2025.
+ */
