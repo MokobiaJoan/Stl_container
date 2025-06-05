@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['skip_5flist_2ehpp_0',['skip_list.hpp',['../skip__list_8hpp.html',1,'']]],
-  ['skiplist_1',['skiplist',['../classSkipList.html',1,'SkipList&lt; T &gt;'],['../classSkipList.html#acbe03685c02ae954f5e65ad801950285',1,'SkipList::SkipList()']]]
+  ['randomlevel_0',['randomLevel',['../classSkipList.html#a8dec0cff2747a60c19be071c96b5d458',1,'SkipList']]],
+  ['reference_1',['reference',['../classSkipList_1_1iterator.html#a1ae0a74c70676286ba5b27ac5c10babd',1,'SkipList::iterator']]],
+  ['run_2',['How to Build and Run',['../index.html#build',1,'']]]
 ];

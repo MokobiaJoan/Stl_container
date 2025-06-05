@@ -1,0 +1,51 @@
+/**
+ * @mainpage Skip List Data Structure in C++
+ *
+ * @section intro Introduction
+ * This project implements a Skip List, a probabilistic data structure that supports fast search, insertion,
+ * and deletion operations in O(log n) average time complexity. It is an alternative to balanced binary search trees.
+ *
+ * @section features Features
+ * - Templated skip list implementation (e.g., SkipList<int>, SkipList<string>, etc.)
+ * - insert(), erase(), and find() methods
+ * - Support for equality comparison (`==` and `!=`)
+ * - Forward iterator support for range-based loops
+ * - Google Test-based unit testing
+ * - Written in modern C++ (C++20)
+ *
+ * @section usage Example Usage
+ * @code{.cpp}
+ * #include "skip_list.hpp"
+ * #include <iostream>
+ * 
+ * int main() {
+ *     SkipList<int> list;
+ *     list.insert(5);
+ *     list.insert(10);
+ *     list.insert(7);
+ * 
+ *     if (list.find(10)) {
+ *         std::cout << "Found 10" << std::endl;
+ *     }
+ * 
+ *     list.erase(5);
+ * 
+ *     for (int value : list) {
+ *         std::cout << value << " ";
+ *     }
+ *     return 0;
+ * }
+ * @endcode
+ *
+ * @section build How to Build and Run
+ * * make        # Builds the project
+ * * ./build/main
+ * make test   # Builds and runs the unit tests
+ *  *
+ * @section context Academic Context
+ * This project was developed as part of a coursework assignment in data structures and algorithms.
+ * The main goal was to demonstrate understanding of probabilistic data structures and modern C++ practices.
+ *
+ * @section author Author
+ * Created by [Mokobia Joan Chidiebere], 2025.
+ */

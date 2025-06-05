@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Skip List Project: Main Page</title>
+<title>Skip List Project: Skip List Data Structure in C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,10 +69,67 @@ $(function() {
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Skip List Project Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Skip List Data Structure in C++ </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introduction</h1>
+<p>This project implements a Skip List, a probabilistic data structure that supports fast search, insertion, and deletion operations in O(log n) average time complexity. It is an alternative to balanced binary search trees.</p>
+<h1><a class="anchor" id="features"></a>
+Features</h1>
+<ul>
+<li>Templated skip list implementation (e.g., SkipList&lt;int&gt;, SkipList&lt;string&gt;, etc.)</li>
+<li>insert(), erase(), and find() methods</li>
+<li>Support for equality comparison (<code>==</code> and <code>!=</code>)</li>
+<li>Forward iterator support for range-based loops</li>
+<li>Google Test-based unit testing</li>
+<li>Written in modern C++ (C++20)</li>
+</ul>
+<h1><a class="anchor" id="usage"></a>
+Example Usage</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="skip__list_8hpp.html">skip_list.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">    <a class="code hl_class" href="classSkipList.html">SkipList&lt;int&gt;</a> list;</div>
+<div class="line">    list.<a class="code hl_function" href="classSkipList.html#a4fc5b868b8343f60fc0e7c0a97310a70">insert</a>(5);</div>
+<div class="line">    list.<a class="code hl_function" href="classSkipList.html#a4fc5b868b8343f60fc0e7c0a97310a70">insert</a>(10);</div>
+<div class="line">    list.<a class="code hl_function" href="classSkipList.html#a4fc5b868b8343f60fc0e7c0a97310a70">insert</a>(7);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (list.<a class="code hl_function" href="classSkipList.html#a450d8aa1cbbd78c207aa7175964509c7">find</a>(10)) {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Found 10&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    list.<a class="code hl_function" href="classSkipList.html#ae5592bc6ec8d1d8c248f04a3a7f96282">erase</a>(5);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value : list) {</div>
+<div class="line">        std::cout &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassSkipList_html"><div class="ttname"><a href="classSkipList.html">SkipList</a></div><div class="ttdoc">Templated Skip List class that supports fast insert, search, and erase operations.</div><div class="ttdef"><b>Definition</b> skip_list.hpp:16</div></div>
+<div class="ttc" id="aclassSkipList_html_a450d8aa1cbbd78c207aa7175964509c7"><div class="ttname"><a href="classSkipList.html#a450d8aa1cbbd78c207aa7175964509c7">SkipList::find</a></div><div class="ttdeci">bool find(const T &amp;value) const</div><div class="ttdoc">Erases a value from the skip list.</div><div class="ttdef"><b>Definition</b> skip_list.hpp:117</div></div>
+<div class="ttc" id="aclassSkipList_html_a4fc5b868b8343f60fc0e7c0a97310a70"><div class="ttname"><a href="classSkipList.html#a4fc5b868b8343f60fc0e7c0a97310a70">SkipList::insert</a></div><div class="ttdeci">void insert(const T &amp;value)</div><div class="ttdoc">Inserts a value into the skip list.</div><div class="ttdef"><b>Definition</b> skip_list.hpp:85</div></div>
+<div class="ttc" id="aclassSkipList_html_ae5592bc6ec8d1d8c248f04a3a7f96282"><div class="ttname"><a href="classSkipList.html#ae5592bc6ec8d1d8c248f04a3a7f96282">SkipList::erase</a></div><div class="ttdeci">void erase(const T &amp;value)</div><div class="ttdef"><b>Definition</b> skip_list.hpp:138</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> main.cpp:4</div></div>
+<div class="ttc" id="askip__list_8hpp_html"><div class="ttname"><a href="skip__list_8hpp.html">skip_list.hpp</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="build"></a>
+How to Build and Run</h1>
+<ul>
+<li>make # Builds the project</li>
+<li>./build/main make test # Builds and runs the unit tests<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="context"></a>
+Academic Context</h1>
+<p>This project was developed as part of a coursework assignment in data structures and algorithms. The main goal was to demonstrate understanding of probabilistic data structures and modern C++ practices.</p>
+<h1><a class="anchor" id="author"></a>
+Author</h1>
+<p>Created by [Mokobia Joan Chidiebere], 2025. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['begin_0',['begin',['../classSkipList.html#a1b7e49822cf96e7b079fb237edf9d2b3',1,'SkipList']]]
+  ['academic_20context_0',['Academic Context',['../index.html#context',1,'']]],
+  ['and_20run_1',['How to Build and Run',['../index.html#build',1,'']]],
+  ['author_2',['Author',['../index.html#author',1,'']]]
 ];

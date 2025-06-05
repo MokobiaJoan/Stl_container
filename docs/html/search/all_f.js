@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eskiplist_0',['~SkipList',['../classSkipList.html#a773a0358a9e2141e12eec6165cd1ecf2',1,'SkipList']]]
+  ['to_20build_20and_20run_0',['How to Build and Run',['../index.html#build',1,'']]]
 ];
