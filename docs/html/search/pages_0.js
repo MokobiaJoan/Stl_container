@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['c_0',['Skip List Data Structure in C++',['../index.html',1,'']]]
+  ['20_0',['Skip List (C++20)',['../index.html',1,'']]]
 ];

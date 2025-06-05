@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_20structure_20in_20c_0',['Skip List Data Structure in C++',['../index.html',1,'']]],
-  ['difference_5ftype_1',['difference_type',['../classSkipList_1_1iterator.html#a4f5bd557cea97117a7fdbf9f81aa7b24',1,'SkipList::iterator']]]
+  ['c_2020_0',['Skip List (C++20)',['../index.html',1,'']]],
+  ['current_1',['current',['../classSkipList_1_1iterator.html#a74eada8804e7915b4b3c22c83cfd8156',1,'SkipList::iterator']]]
 ];
